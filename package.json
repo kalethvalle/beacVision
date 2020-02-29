@@ -1,0 +1,68 @@
+{
+  "name": "standar",
+  "version": "1.0.0",
+  "description": "andres y kaleth",
+  "main": "./main.js",
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Kaleth <info@kaleth.com>",
+  "homepage": "https://github.com/owner/project#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^6.0.10",
+    "electron-builder": "^21.2.0"
+  },
+  "build": {
+    "appId": "proyect-electronv1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "files": [
+        "!**/node_modules/*"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/pr.ico",
+      "files": [
+        "!**/node_modules/*",
+        "!**/app/*",
+        "!**/nbproject/*"
+      ]
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowElevation": true,
+      "allowToChangeInstallationDirectory": true,
+      "runAfterFinish": false,
+      "include": "build/installer.nsh"
+    }
+  },
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "mysql": "^2.18.1"
+  }
+}
