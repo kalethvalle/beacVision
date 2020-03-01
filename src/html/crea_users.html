@@ -4,10 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="import" href="script.html">
+    <style>
+        .principal{
+            background-color: darkblue;
+            height: 703px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        .h1{
+            background-color: yellow;
+            margin: 10px;
+            display: flex;
+        }
+
+        .ancho{
+            height: 100%;
+        }
+
+        .h2{
+            background-color: orange;
+            margin: 10px;
+            width: 100%;
+        }
+
+        .ancho-h2{
+            width: 40%;
+        }
+
+        .h3{
+            background-color: red;
+            /* height: 47%; */
+            margin: 10px;
+
+        }
+
+        .direccion{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .h4{
+            background-color: green;
+            margin: 10px;
+        }
+
+        .ancho-h4-1{
+            height: 10%;
+        }
+
+        .ancho-h4-2{
+            height: 80%;
+        }
+
+        .ancho-h4-3{
+            height: 10%;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>crear perfil</h1>
-    <a class="btn btn-primary" href="main.html"> atras</a>
-    
+    <!-- <a class="btn btn-primary" href="main.html"> atras</a> -->
+    <div class="principal">
+        <div class="h1">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+        <div class="h1 ancho">
+            <div class="h2 ancho-h2">
+                <div class="h3">
+                    <div class="card">
+                        <img src="../img/beacon.png" class="card-img-top" alt="...">
+                    </div>
+                </div>
+                <div class="h3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h2 direccion">
+                <div class="h4 ancho-h4-1">
+                    kdkdkdkdkdk
+                </div>
+                <div class="h4 ancho-h4-2">
+                    ufibifv
+                </div>
+                <div class="h4 ancho-h4-3">
+                    fdgfbfbfb
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
