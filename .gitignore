@@ -2,5 +2,5 @@ node_modules/
 build/
 dist/
 copia/
-src/python/
+src/python/login.py
 electron-builder.yml
