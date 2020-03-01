@@ -254,7 +254,7 @@ const path = require('path');
 let win;
 function creaVentana() {
   win = new BrowserWindow({
-    title: 'proyecto | Inicio',
+    title: 'beacVision',
     icon: 'build/pr.ico',
     autoHideMenuBar: true,
     webPreferences: {
