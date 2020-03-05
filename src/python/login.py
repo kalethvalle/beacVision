@@ -27,10 +27,10 @@ class DataBase:
     except expression as e:
       raise
 
-  def __gtUser__(self):
+  def getUser(self):
     return self.__usuario
 
-  def __gtPass__(self):
+  def getPass(self):
     return self.__password
 
   def __str__(self):
@@ -44,10 +44,10 @@ class ObtenerParams():
     self.__user = user
     self.__clave = clave
 
-  def __gtUser__(self):
+  def getUser(self):
     return self.__user
 
-  def __gtPass__(self):
+  def getPass(self):
     return self.__clave
 
   def __str__(self):
@@ -75,7 +75,7 @@ def main():
   # ********************************************* #
 
   # *********Valida Login inicio sesion********** #
-   if Params.__gtUser__() == database.__gtUser__() and Params.__gtPass__() == database.__gtPass__():
+   if Params.getUser() == database.getUser() and Params.getPass() == database.getPass():
      Cdn = String("0")
    else:
      Cdn = String("1")

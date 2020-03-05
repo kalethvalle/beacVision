@@ -8,7 +8,6 @@ $(document).ready(function(){
     const $loginName = $('#login_name');
     const $loginpwd = $('#login_pwd');
     
-
     $loginForm.submit(e => {
         e.preventDefault();
         callPy($loginName.val(), $loginpwd.val());

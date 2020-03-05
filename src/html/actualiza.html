@@ -1,4 +1,4 @@
-<nav class="navbar navbar-light bg-light">
+<!-- <nav class="navbar navbar-light bg-light">
     <form class="form-inline">
       <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
@@ -17,4 +17,99 @@
         </div>
       </div>
 
+  </div> -->
+
+  <style>
+    .principal{
+        /* background-color: darkblue; */
+        height: 605px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .h1{
+        /* background-color: yellow; */
+        margin: 5px;
+        display: flex;
+    }
+
+    .ancho{
+        height: 100%;
+    }
+
+    .h2{
+        /* background-color: orange; */
+        margin: 10px;
+        width: 100%;
+    }
+
+    .ancho-h2{
+        width: 40%;
+    }
+
+    .direccion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h4{
+        /* background-color: green; */
+        margin: 10px;
+        height: 100%;
+    }
+</style>
+
+<div class="principal">
+  <div class="h1">
+      <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
   </div>
+  <div class="h1 ancho">
+      <div class="card" style="width: 22rem;">
+          <img src="../img/beacon.png" class="card-img-top" alt="...">
+          <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text" style="font-size: medium;">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer" style="font-size: medium;">
+              <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+      </div>
+      <div class="h2 direccion">
+          <ul class="nav nav-tabs" style="font-size: 1.2rem;">
+              <li class="nav-item">
+                  <a class="nav-link active" href="#">beacvi bV 1.0.0.1</a>
+              </li>
+              <!-- <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+              </li> -->
+              </ul>
+
+              <div class="tab-actualiza">
+                  <div class="card ancho-card">
+                      <div class="card-header" style="font-size: 0.7em;">
+                          Facultad Mecanica Dental
+                      </div>
+                      <div class="card-body">
+                          <h5 class="card-title" style="font-size: x-large;">Salon 111</h5>
+                          <p class="card-text" style="font-size: medium;">
+                               -Contorno y maqueta Dental (M.dent III) [06:00 am - 08:00 am]
+                          <br> -Sin Clase asignada (--) [00:00 xx - 00:00 xx]
+                          <br><br><br><br><br><br><br><br><br><br><br>
+                          </p>
+                          <div class="card-footer">
+                              <a href="#" class="btn btn-primary">Guardar Salon</a>
+                          </div>
+                      </div>
+                  </div>
+                  <a href="#" class="btn btn-success">Agregar</a>
+              </div>
+      </div>
+  </div>
+</div>
