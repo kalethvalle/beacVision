@@ -1,6 +1,4 @@
 node_modules/
-build/
 dist/
 copia/
-src/python/login.py
 electron-builder.yml
