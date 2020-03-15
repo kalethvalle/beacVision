@@ -26,7 +26,7 @@ class DataBase:
     return self.datos
 
   def __str__(self):
-    return '{"DB": "conexion establecida con exito...."}'
+    return '{"DB": "conexion establecida con exito..."}'
 
   def closeConnection(self):
     self.connection.close()

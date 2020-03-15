@@ -59,7 +59,7 @@ def main():
     conexion(Params.getNombre(), Params.getApellido(), Params.getEmail(), Params.getClave())
   # ********************************************* #
 
-  # ******* Envia Respuesta del Back-End ******** #
+  # ******* Envia Respuesta del Back-End ********* #
     # print(str(Params))
   # ********************************************* #
 
