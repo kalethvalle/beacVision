@@ -11,30 +11,22 @@ class DataBase:
     )
 
     self.cursor = self.connection.cursor()
-    self.__usuario = ''
-    self.__password = ''
 
-  def select_user(self, id):
-    sql = 'SELECT id, firstName, password FROM usuarios WHERE id = {}'.format(id)
+  def selectUser(self):
+    sql = "SELECT id, firstName, password FROM usuarios"
 
     try:
       self.cursor.execute(sql)
-      user = self.cursor.fetchone()
+      self.datos = self.cursor.fetchall()
 
-      self.__usuario = user[1]
-      self.__password = user[2]
-
-    except expression as e:
+    except Exception as e:
       raise
 
-  def getUser(self):
-    return self.__usuario
-
-  def getPass(self):
-    return self.__password
+  def getDatos(self):
+    return self.datos
 
   def __str__(self):
-    return '{"DB": "conexion establecida con exito...", "usuario": "' + self.__usuario + '", "email": "' + self.__password +'" }'
+    return '{"DB": "conexion establecida con exito..."}'
 
   def closeConnection(self):
     self.connection.close()
@@ -59,27 +51,32 @@ class String():
     self.__cadena = cadena
 
   def __str__(self):
-    return '{"Status": "' + self.__cadena + '"}'
+    return '{"status": "' + self.__cadena + '"}'
 
 def main():
+  # ******Obtiene parametros de Front-End******** #
+   Params = ObtenerParams(sys.argv[1], sys.argv[2])
+  # ********************************************* #
+
   # **********Conexion DataBase PyMySQL********** #
    database = DataBase()
-   database.select_user(1)
-  #  print(str(database))
+   database.selectUser()
+   datos = database.getDatos()
+
    database.closeConnection()
   # ********************************************* #
 
-  # ******Obtiene parametros de Front-End******** #
-   Params = ObtenerParams(sys.argv[1], sys.argv[2])
-  #  print(str(Params))
+  # ******* Envia Respuesta del Back-End ******** #
+   print(str(database))
+   print(str(Params))  
   # ********************************************* #
 
   # *********Valida Login inicio sesion********** #
-   if Params.getUser() == database.getUser() and Params.getPass() == database.getPass():
-     Cdn = String("0")
-   else:
-     Cdn = String("1")
-      
+   Cdn = String("1")
+   for data in range(len(datos)):
+     if Params.getUser() == datos[data][1] and Params.getPass() == datos[data][2]:
+       Cdn = String("0")
+
    print(str(Cdn))
   # ********************************************* #
   

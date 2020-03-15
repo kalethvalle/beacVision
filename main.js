@@ -255,7 +255,7 @@ let win;
 function creaVentana() {
   win = new BrowserWindow({
     title: 'beacVision',
-    icon: 'build/beacon.png',
+    // icon: 'build/beacon.png',
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
