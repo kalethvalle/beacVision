@@ -1,5 +1,5 @@
 import sys
-from DataBase import DataBase
+from ConnectMysql import DataBase
 
 class ObtenerParams():
     def __init__(self, nombre, apellido, email, clave):
