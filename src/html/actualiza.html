@@ -1,0 +1,174 @@
+<!-- <nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </nav>
+  <div class="p1 d-flex justify-content-around">
+      <div class="texto d-flex justify-content-around">
+        <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="../img/beacon.png" alt="Card image cap">
+          <div class="card-body">
+            <h6 class="card-title">Referencia:</h6>
+              <input type="text" class=""><br>
+                  <h6>Nombre:</h6>
+                  <input type="text" class="">        
+          </div>
+        </div>
+      </div>
+
+  </div> -->
+
+  <style>
+    .principal{
+        /* background-color: darkblue; */
+        height: 605px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .h1{
+        /* background-color: yellow; */
+        margin: 5px;
+        display: flex;
+    }
+
+    .ancho{
+        height: 100%;
+    }
+
+    .h2{
+        /* background-color: orange; */
+        margin: 10px;
+        width: 100%;
+    }
+
+    .ancho-h2{
+        width: 40%;
+    }
+
+    .direccion{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .h4{
+        /* background-color: green; */
+        margin: 10px;
+        height: 100%;
+    }
+    .boton_personalizado{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #196fdf;
+    border-radius: 6px;
+    border: 2px solid #196fdf;
+  }
+  .boton_personalizado:hover{
+    color: #1883ba;
+    background-color: #ffffff;
+  }
+
+</style>
+
+<div class="principal">
+  <div class="h1">
+      <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar Rf" aria-label="Search">
+          <button class="boton_personalizado" type="submit">Buscar</button>
+      </form>
+  </div>
+
+
+      <div class="h2 direccion">
+              
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >beacvi Rf 1.0.0.2 </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">beacvi Rf 1.0.0.2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">beacvi Rf 1.0.0.3</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                  <!-- // primera -->
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><div class="card ancho-card"> 
+                    <div class="card-header" style="background-color: #196fdf; color: #ffffff; font-size: 0.7em;">
+                        Ingenieria Informática
+                    </div>  
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: x-large;">Salon 108</h4>
+                        <p class="card-text" style="font-size: medium;">
+                             -Aplicaciones en Entorno Gráfico con Progrmamación (Ing. Informática III) [06:00 pm - 08:00 pm]
+                        <br> -Competencia Comunicativa en Segunda Lengua (Ing. Informática III) [08:00 pm - 10:00 pm]
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Guardar Salon</a>
+                            <a href="#" class="btn btn-primary">Historial</a>
+                        </div>
+                    </div>
+                </div></div>
+
+                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="card ancho-card">
+                    <!-- // segunda -->
+                    <div class="card-header" style="background-color: #196fdf; color: #ffffff; font-size: 0.7em;">
+                        Ingenieria Informática
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: x-large;">Salon 117</h4>
+                        <p class="card-text" style="font-size: medium;">
+                            -Teoria del Conocimiento (Ing. Informática III) [06:00 pm - 08:00 pm]
+                            <br> -Conceptos y Principios de la Contabilidad General (Ing. Informática III) [08:00 pm - 10:00 pm]
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Guardar Salon</a>
+                            <a href="#" class="btn btn-primary">Historial</a>
+                        </div>
+                    </div>
+                </div></div>
+
+                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab"><div class="card ancho-card">
+                    <!-- // tercera -->
+                    <div class="card-header" style="background-color: #196fdf; color: #ffffff; font-size: 0.7em;">
+                        Ingenieria Informática
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title" style="font-size: x-large;">Salon 110</h4>
+                        <p class="card-text" style="font-size: medium;">
+                            -Diseño de un Circuito Elctrónico Digital (Ing. Informática III) [06:00 pm - 10:00 pm]
+
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        </p>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Guardar Salon</a>
+                            <a href="#" class="btn btn-primary">Historial</a>
+                        </div>
+                    </div>
+                </div></div>
+                <a id="agregar" href="#" class="btn btn-success">Agregar</a>
+                
+              </div>
+              
+      </div>
+      
+  </div>
+  
+</div>
+
+<script>
+    $sensor = $("#sensor");
+    $("#agregar").click(function(){
+        for(let i = 0; i < 3; i++){
+            
+        }
+    })
+</script>

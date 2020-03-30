@@ -37,7 +37,7 @@ class ObtenerParams():
 
 def conexion(nombre, apellido, email, clave):
   try:
-    db = DataBase('localhost', 'phpmyadmin', 'kaleth02', 'phpmyadmin')
+    db = DataBase('localhost', 'root', '', 'phpmyadmin')
     sql = "INSERT INTO usuarios(firstName, lastName, email, password) values('" + nombre + "', '" + apellido + "', '" + email + "', '" + clave + "')"
     db.runSentence(sql)
     db.commit()

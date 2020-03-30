@@ -14,3 +14,6 @@ $("#estado-tab").click(function() {
 $("#actualiza-tab").click(function(){
     $(".tab-content").load("actualiza.html")
 })
+$("#historial-tab").click(function(){
+    $(".tab-content").load("historial.html")
+})
