@@ -28,3 +28,22 @@
     height: 50px;
     border-radius: 10px;
 }
+
+.h4{
+    text-align: center;
+    color: #ffffff;
+    background-color: #196fdf;  
+}
+.h5{
+    text-align: center;
+}
+.body{
+    font: 'arial';
+}
+#titulos{
+    background-color: #196fdf;
+    color: #ffffff;
+}
+#subt{
+    text-align: center;
+}

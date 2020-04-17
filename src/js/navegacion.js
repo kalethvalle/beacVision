@@ -17,3 +17,6 @@ $("#actualiza-tab").click(function(){
 $("#historial-tab").click(function(){
     $(".tab-content").load("historial.html")
 })
+$("#historial_2-tab").click(function(){
+    $(".tab-content").load("historial_2.html")
+})

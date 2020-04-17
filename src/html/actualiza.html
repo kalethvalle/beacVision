@@ -1,24 +1,3 @@
-<!-- <nav class="navbar navbar-light bg-light">
-    <form class="form-inline">
-      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
-    </form>
-  </nav>
-  <div class="p1 d-flex justify-content-around">
-      <div class="texto d-flex justify-content-around">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="../img/beacon.png" alt="Card image cap">
-          <div class="card-body">
-            <h6 class="card-title">Referencia:</h6>
-              <input type="text" class=""><br>
-                  <h6>Nombre:</h6>
-                  <input type="text" class="">        
-          </div>
-        </div>
-      </div>
-
-  </div> -->
-
   <style>
     .principal{
         /* background-color: darkblue; */
@@ -88,7 +67,7 @@
               
               <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >beacvi Rf 1.0.0.2 </a>
+                  <a class="nav-link active"  id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >beacvi Rf 1.0.0.1 </a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">beacvi Rf 1.0.0.2</a>
@@ -103,16 +82,29 @@
                     <div class="card-header" style="background-color: #196fdf; color: #ffffff; font-size: 0.7em;">
                         Ingenieria Informática
                     </div>  
-                    <div class="card-body">
-                        <h4 class="card-title" style="font-size: x-large;">Salon 108</h4>
-                        <p class="card-text" style="font-size: medium;">
-                             -Aplicaciones en Entorno Gráfico con Progrmamación (Ing. Informática III) [06:00 pm - 08:00 pm]
-                        <br> -Competencia Comunicativa en Segunda Lengua (Ing. Informática III) [08:00 pm - 10:00 pm]
-                        <br><br><br><br><br><br><br><br><br><br><br>
-                        </p>
+                    <div class="card-body" >
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Salón</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Salón 117" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Curso</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Teoria del Conocimiento" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Horario</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: 06:00 pm - 08:00 pm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Guardar Salon</a>
-                            <a href="#" class="btn btn-primary">Historial</a>
+                            <a href="#" class="btn btn-primary">Guardar</a>
+                            <a href="historial_2.html" class="btn btn-primary">Historial</a>
                         </div>
                     </div>
                 </div></div>
@@ -120,18 +112,30 @@
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><div class="card ancho-card">
                     <!-- // segunda -->
                     <div class="card-header" style="background-color: #196fdf; color: #ffffff; font-size: 0.7em;">
-                        Ingenieria Informática
+                        Ingenieria Informática  
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title" style="font-size: x-large;">Salon 117</h4>
-                        <p class="card-text" style="font-size: medium;">
-                            -Teoria del Conocimiento (Ing. Informática III) [06:00 pm - 08:00 pm]
-                            <br> -Conceptos y Principios de la Contabilidad General (Ing. Informática III) [08:00 pm - 10:00 pm]
-                        <br><br><br><br><br><br><br><br><br><br><br>
-                        </p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Salón</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Salón 117" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Curso</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Teoria del Conocimiento" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Horario</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: 06:00 pm - 08:00 pm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Guardar Salon</a>
-                            <a href="#" class="btn btn-primary">Historial</a>
+                            <a href="#" class="btn btn-primary">Guardar</a>
+                            <a href="historial_2.html" class="btn btn-primary">Historial</a>
                         </div>
                     </div>
                 </div></div>
@@ -142,15 +146,27 @@
                         Ingenieria Informática
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title" style="font-size: x-large;">Salon 110</h4>
-                        <p class="card-text" style="font-size: medium;">
-                            -Diseño de un Circuito Elctrónico Digital (Ing. Informática III) [06:00 pm - 10:00 pm]
-
-                        <br><br><br><br><br><br><br><br><br><br><br>
-                        </p>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Salón</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Salón 117" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                        </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Curso</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: Teoria del Conocimiento" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
+                          <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="inputGroup-sizing-default">Horario</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Ejemplo: 06:00 pm - 08:00 pm" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                          </div>
                         <div class="card-footer">
-                            <a href="#" class="btn btn-primary">Guardar Salon</a>
-                            <a href="#" class="btn btn-primary">Historial</a>
+                            <a href="#" class="btn btn-primary">Guardar</a>
+                            <a class="btn btn-primary"" href="historial_2.html">Historial</a>
                         </div>
                     </div>
                 </div></div>
@@ -164,7 +180,7 @@
   
 </div>
 
-<script>
+ <script>
     $sensor = $("#sensor");
     $("#agregar").click(function(){
         for(let i = 0; i < 3; i++){
