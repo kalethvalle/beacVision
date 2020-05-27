@@ -5,7 +5,7 @@
   width: 100%;
   position: relative;
   overflow-x: hidden;
-  overflow-y: visible;
+  overflow-y: visible; 
 }
 .flip-items,
 .flip-item {

@@ -18,4 +18,4 @@ $("#historial-tab").click(function(){
 })
 $("#historial_2-tab").click(function(){
     $(".tab-content").load("historial_2.html")
-})
+}) 

@@ -13,4 +13,4 @@ $(".sensores-tab").click(function(){
 
 //     const li = $("<>")
 
-// });
+// }); 

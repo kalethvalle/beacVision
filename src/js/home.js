@@ -10,7 +10,7 @@ var myLineChart = new Chart(ctxD, {
                 data: [3, 1, 1],
                 backgroundColor: ["#008000", "#46BFBD", "#FDB45C", ],
                 hoverBackgroundColor: ["#A8B3C5", "#5AD3D1", "#FFC870"]
-            }
+            } 
         ]
     },
         options: {
