@@ -260,6 +260,7 @@ function creaVentana() {
     icon: 'build/beacon.png',
     minWidth: 550,
     minHeight:650,
+    // icon: 'build/beacon.png',
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true

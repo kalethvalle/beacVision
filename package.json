@@ -10,7 +10,7 @@
     "dist": "electron-builder"
   },
   "keywords": [],
-  "author": "Kaleth <info@kaleth.com>",
+  "author": "Kaleth valle developer <info@kaleth.com>",
   "homepage": "https://github.com/owner/project#readme",
   "license": "MIT",
   "devDependencies": {
@@ -18,8 +18,7 @@
     "electron-builder": "^21.2.0"
   },
   "build": {
-    "appId": "proyect-electronv1",
-    "extraResources": "/src/python/*",
+    "appId": "beacVision-electronv1",
     "asar": false,
     "dmg": {
       "contents": [
@@ -66,5 +65,12 @@
     "jquery": "^3.4.1",
     "mysql": "^2.18.1",
     "python-shell": "^1.0.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalethvalle/beacVision.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kalethvalle/beacVision/issues"
   }
 }

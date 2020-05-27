@@ -27,9 +27,12 @@ $(document).ready(function(){
         PythonShell.run('login.py', options, function (err, results) {
             if (err) throw err;
             
-            // console.log(results);
-            var obj = JSON.parse(results[0]);
-            validarIngreso(obj.Status);
+            console.log(results);
+            var Rdb = JSON.parse(results[0]);
+            console.log(Rdb.DB)
+            var Rbe = JSON.parse(results[2]);
+            // console.log(Rbe.status);
+            validarIngreso(Rbe.status);
         });
     }
 
