@@ -1,31 +1,78 @@
-<div class="p1">
-    <div class="texto">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="../img/beacon.png" alt="Card image cap">
-            <div class="card-body">
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Activos
-                      <span class="badge badge-primary badge-pill">3</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Inactivos
-                      <span class="badge badge-primary badge-pill">1</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Warnings
-                      <span class="badge badge-primary badge-pill">1</span>
-                    </li>
-                  </ul>        
-            </div>
-          </div>
+<!-- <div class="p1"> -->
+<div class="p1 texto">
+  <div class="card border-info mb-3"" style="width: 20rem;">
+    <img class="card-img-top" src="../img/beacon.png" alt="Card image cap">
+    <div class="card-body">
+      <ul class="list-group">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Activos
+          <span class="badge badge-primary badge-pill">3</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Inactivos
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+        <li class="list-group-item  d-flex justify-content-between align-items-center">
+          Warnings
+          <span class="badge badge-primary badge-pill">1</span>
+        </li>
+      </ul>
     </div>
-    <div class="estadistica">
-        <canvas id="grafica"></canvas>
-    </div>
-    <!-- <div class="texto">
-        valor texto
-    </div> -->
+  </div>
 </div>
+<div class="p1 estadistica">
+  <canvas id="grafica" width="500" min-width="400" height="500"></canvas>
+</div>
+<div class="p1" style="flex-direction: column; ">
+  <div class="text-center" style="margin-top: 30px;">
+    <span class="">
+      <h1 class="border-bottom  border-right text-info"><strong>Información beacVi</strong></h1>
+    </span>
+  </div>
+
+  <di style="margin-top: 40px;">
+    <table class="table table-borderless">
+      <thead class="thead-light">
+        <tr>
+          <th class="text-center" scope="col">Sensor</th>
+          <th class="text-center" scope="col">Ubicacion</th>
+          <th class="text-center" scope="col">Estado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="">
+          <th class="text-center" scope="row">beacvi_bV_1001</th>
+          <td class="text-center">Mecanica Dental</td>
+          <td style="padding-left: 40px;"> <div class="led-box"><div class="led-green"></div></div> </td class="text-center">
+        </tr>
+        <tr class="">
+          <th class="text-center" scope="row">beacvi_bV_1002</th>
+          <td class="text-center">Salud Ocupacional</td>
+          <td style="padding-left: 40px;"> <div class="led-box"><div class="led-yellow"></div></div> </td>
+        </tr>
+        <tr class="">
+          <th class="text-center" scope="row">beacvi_bV_1003</th>
+          <td class="text-center">Adminitracion de Empresa</td>
+          <td style="padding-left: 40px;"> <div class="led-box"><div class="led-green"></div></div> </td>
+        </tr>
+        <tr class="">
+          <th class="text-center" scope="row">beacvi_bV_1004</th>
+          <td class="text-center">Ing. Informatica</td>
+          <td style="padding-left: 40px;"> <div class="led-box"><div class="led-red"></div></div> </td>
+        </tr>
+        <tr class="">
+          <th class="text-center" scope="row">beacvi_bV_1005</th>
+          <td class="text-center">Contaduria Publica</td>
+          <td style="padding-left: 40px;"> <div class="led-box"><div class="led-green"></div></div> </td>
+        </tr>
+      </tbody>
+    </table>
+
+  </di>
+
+</div>
+
+<!-- </div> -->
+
 
 <script src="../js/home.js"></script>

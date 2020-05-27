@@ -1,7 +1,7 @@
 {
-  "name": "standar",
+  "name": "beacVision",
   "version": "1.0.0",
-  "description": "andres y kaleth",
+  "description": "beacVision, ayuda a personas con discapacidad viusal",
   "main": "./main.js",
   "scripts": {
     "postinstall": "install-app-deps",
@@ -19,7 +19,8 @@
   },
   "build": {
     "appId": "proyect-electronv1",
-    "asar": true,
+    "extraResources": "/src/python/*",
+    "asar": false,
     "dmg": {
       "contents": [
         {
@@ -45,7 +46,7 @@
     },
     "win": {
       "target": "NSIS",
-      "icon": "build/pr.ico",
+      "icon": "build/beacon.png",
       "files": [
         "!**/node_modules/*",
         "!**/app/*",

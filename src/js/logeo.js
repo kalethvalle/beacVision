@@ -18,7 +18,7 @@ $(document).ready(function(){
 
         let options = {
             mode: 'text',
-            // pythonPath: 'path/to/python',
+            pythonPath: path.join(__dirname, '..', 'lib', 'python.exe'),
             pythonOptions: ['-u'], // get print results in real-time
             scriptPath: path.join(__dirname, 'python'),
             args: [user, pass]

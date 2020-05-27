@@ -1,0 +1,119 @@
+<style>
+    .h1 {
+        margin: 5px;
+        /* display: flex;
+        align-items: flex-start; */
+    }
+
+
+    .h2 {
+        /* background-color: orange; */
+        margin: 10px;
+        width: 100%;
+    }
+
+
+
+</style>
+
+<div class="h1">
+    <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+</div>
+
+<div class="h2 direccion">
+    <ul id="sensor" class="nav nav-tabs" style="font-size: 1.2rem;">
+        <!-- se agrega li desde JS -->
+    </ul>
+
+    <div id="body-sensor" class="tab-actualiza">
+        <!-- se agrega div desde JS -->
+    </div>
+    
+</div>
+
+<script>
+    data = {
+        sensor: [
+            {
+                serial: 'beacvi_bV_1001',
+                estado: 'Activo',
+                ubicacion: 'facultad mecanica dental',
+                salon: [
+                    {
+                        numero: 'Salon 111',
+                        horario: '-Contorno y maqueta Dental (M.dent III) [06:00 - 08:00]'
+                    }
+                ]
+            },
+            {
+                serial: 'beacvi_bV_1002',
+                estado: 'Inactivo',
+                ubicacion: 'facultad Ing. Informatica',
+                salon: [
+                    {
+                        numero: 'Sala de Sistemas 1',
+                        horario: '-Estructura de datos (Ing III) [18:00 - 21:00]'
+                    }
+                ]
+            }
+        ]
+    }
+
+    $sensor = $("#sensor");
+    let html = '';
+    for (let i = 0; i < data.sensor.length; i++) {
+        if (i === 0) {
+            html += `<li id="tab-sensor-${i}" class="nav-item"><a class="nav-link active" href="#" data-toggle="tab">${data.sensor[i].serial}</a></li>`;
+        } else {
+            html += `<li id="tab-sensor-${i}" class="nav-item"><a class="nav-link" href="#" data-toggle="tab">${data.sensor[i].serial}</a></li>`;
+        }
+
+        console.log(data.sensor[i].serial);
+    }
+
+    $sensor.html(html);
+    tabPestaña(0);
+
+    $("#agregar").click(function () {
+        console.log('crear nuevo sensor');
+    });
+
+    $("#tab-sensor-1").click(function(){
+        console.log('ingreso al evento');
+        tabPestaña(1);
+    });
+
+    $("#tab-sensor-0").click(function(){
+        console.log('ingreso al evento');
+        tabPestaña(0);
+    });
+
+    function tabPestaña(index) {
+        $bodysensor = $("#body-sensor");
+        __htmlCard = '';
+        __htmlCard += `
+            <div class="card">
+                <div class="card-header" style="font-size: 0.7em;">
+                    ${data.sensor[index].ubicacion}
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title" style="font-size: x-large;">${data.sensor[index].salon[0].numero}</h5>
+                    <p class="card-text" style="font-size: medium;">
+                        ${data.sensor[index].salon[0].horario}
+                        <br> -Sin Clase asignada (--) [00:00 xx - 00:00 xx]
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                    </p>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Guardar Salon</a>
+                    </div>
+                </div>
+            </div>
+            <a id="agregar" href="#" class="btn btn-success">Agregar</a>
+        `;
+
+        $bodysensor.html(__htmlCard);
+    }
+</script>

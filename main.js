@@ -253,9 +253,13 @@ const path = require('path');
 
 let win;
 function creaVentana() {
+  var python = require('child_process').spawn('python', ['./src/python/login.py']);
+  // let python = spawn('python', [path.join(app.getAppPath(), 'python','login.py'])
   win = new BrowserWindow({
     title: 'beacVision',
     icon: 'build/beacon.png',
+    minWidth: 550,
+    minHeight:650,
     autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true

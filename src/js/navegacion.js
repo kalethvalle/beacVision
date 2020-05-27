@@ -1,6 +1,5 @@
 $(document).ready(function() {
     $(".tab-content").load("home.html");
-    $('.dropdown-toggle').dropdown()
 });
 
 $("#home-tab").click(function() {
