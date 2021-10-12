@@ -14,7 +14,7 @@
   "homepage": "https://github.com/owner/project#readme",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^6.0.10",
+    "electron": "^11.5.0",
     "electron-builder": "^21.2.0"
   },
   "build": {
